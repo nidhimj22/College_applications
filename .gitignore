@@ -1,0 +1,7 @@
+#excutables
+*.pyc
+*.pyo
+
+#django 
+*.log
+*.pot 
