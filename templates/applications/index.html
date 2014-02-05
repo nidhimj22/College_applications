@@ -1,0 +1,12 @@
+{% if earliest_deadline_list %}
+    <ul>
+    {% for p in earliest_deadline_list %}
+        <li><a href="/apps/{{ application.id }}/">{{ p.college }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No entries are available.</p>
+{% endif %}
+
+
+

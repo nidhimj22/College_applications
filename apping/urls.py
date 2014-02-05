@@ -6,10 +6,13 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'apping.views.home', name='home'),
+     url(r'^apps/$', 'apps.views.index'),
+	url(r'^apps/(?P<application_id>\d+)/$', 'apps.views.detail'),
+#    url(r'^polls/(?P<poll_id>\d+)/results/$', 'polls.views.results'),
+ #   url(r'^polls/(?P<poll_id>\d+)/vote/$', 'polls.views.vote'),
     # url(r'^apping/', include('apping.foo.urls')),
 
-    # Uncomment the admin/doc line below to enable admin documentation:
+    	# Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     # Uncomment the next line to enable the admin:
