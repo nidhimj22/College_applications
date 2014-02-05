@@ -4,9 +4,9 @@
 
 #django 
 *.log
-*.poti
+*.pot
 
  
 *.swp
 *.swo
- 
+*~ 
